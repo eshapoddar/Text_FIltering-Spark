@@ -1,8 +1,8 @@
 # BigData
 
 
-**Custom Functions 
-**
+**Custom Functions**
+
 **NewsPreProcessorMap:** The code defines a class NewsPreProcessorMap that implements the MapFunction interface. The purpose of this class is to preprocess news articles to extract important text tokens.
 The call() method takes a NewsArticle object and returns a ProcessedArticle object. It first initialises a TextPreProcessor object. Then, it loops through each ContentItem in the NewsArticle object and extracts the text content. It then uses the TextPreProcessor object to preprocess the content and extract tokens. The resulting tokens are added to an ArrayList called processedTokens. Finally, a new ProcessedArticle object is returned, which includes the NewsArticle ID, title, and the processed tokens as a list.
 The class is serializable, which means that it can be easily distributed across a Spark cluster. 
